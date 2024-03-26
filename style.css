@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --blue: #1a7fbd;
+  --lightBlue: #a4dcff;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-image: url("./Assets_Netuno/bannertopo.png");
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header>a {
+  background-color: var(--black);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+ol {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+li {
+  margin: 0px 16px;
+}
+
+main {
+  margin-top: 15vh;
+}
+
+form {
+  width: 368px;
+  margin-left: 60%;
+  margin-right: 8px;
+  border-radius: 8px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 936px) {
+  form {
+    margin: 0px auto;
+  }
+}
+
+#formHeader {
+  padding: 24px 24px 0px 24px;
+  margin: 8px;
+}
+
+#formHeader>p {
+  margin: 8px 0px;
+}
+
+.inputContainer {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px;
+  width: 85%;
+  margin: 8px auto 0px auto;
+}
+
+.inputContainer>input,
+select {
+  border: 0px;
+  width: 90%;
+}
+
+select {
+  margin-left: 4px;
+}
+
+input:focus,
+select:focus {
+  border: 0;
+  outline: 0;
+}
+
+.icon {
+  width: 16px;
+}
+
+#formMain>select {
+  width: 97%;
+}
+
+#checkboxContainer {
+  color: #fff;
+  background-color: var(--blue);
+  padding: 16px 0;
+  margin: 32px auto 0px auto;
+}
+
+#checkboxContainer>p,
+#checkboxList {
+  margin: 0px 0px 8px 16px;
+}
+
+#checkboxList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#checkboxList>label {
+  margin: 0 4px;
+  width: 30%;
+  text-align: left;
+}
+
+#question {
+  width: 90%;
+  margin: 32px auto 0px auto;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.826);
+}
+
+#question>p {
+  margin: 0px 0px 8px 16px;
+}
+
+#question>label>input {
+  margin-left: 16px;
+}
+
+#requireFieldsSpan {
+  margin: 8px 0px 16px 0px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: var(--blue);
+  text-align: center;
+}
+
+button[type=submit] {
+  background-color: var(--blue);
+  color: #fff;
+  margin: 8px auto;
+  border: 0px;
+  width: 90%;
+  font-size: 1.3rem;
+  padding: 8px 0px;
+  border-radius: 4px;
+}
+
+#advice,
+#advice>span {
+  width: 60%;
+  margin: 0 auto 32px auto;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+#advice>span {
+  color: var(--blue);
+}
+
+.divParent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divLeft,
+.divRight {
+  width: 49%;
+}
+
+@media screen and (max-width: 800px) {
+  .divLeft,
+.divRight {
+ width: 100%;
+}
+.divLeft>img{ 
+  width: 60%;
+  margin-right: 20vw;
+}
+#rightText1,#rightText2{
+  margin-left:27%;
+}
+}
+
+.divLeft {
+  text-align: right;
+}
+
+.rightText {
+  width: 80%;
+  margin: 64px;
+}
+
+.rightText>h1 {
+  font-size: 2.3rem;
+  color: #a4dcff;
+}
+
+.rightText>p {
+  color: #fff;
+  width: 70%;
+  margin: 16px 0px 0px 4px;
+  font-weight: 300;
+}
+
+.rightText>p:last-child {
+  font-weight: 500;
+}
+
+/* Segundo container */
+#rightText2>h1 {
+  background-image: linear-gradient(to right, var(--blue) 0%, var(--lightBlue) 45%);
+  background-clip: text;
+  color: transparent;
+}
+
+#rightText2>p,
+strong{
+  color: #000;
+  margin: 24px 0px 16px 0px;
+}
+
+#rightText2>p {
+  font-weight: 400;
+}
+
+#rightText2>h2 {
+  font-size: 1.15rem;
+  width: 70%;
+  border-bottom: 1.4px solid rgba(215, 215, 215, 0.826);
+  margin-top: 24px;
+  padding-bottom: 16px;
+}
+
+#rightText2>p>strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 10%;
+}
+
+#cardsContainer{
+  display: flex;
+}
+.card{
+  width: 20%;
+}

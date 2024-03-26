@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./Assets_Netuno/assets/logo.png" alt="" width="200" />
+        <nav>
+            <ol>
+                <li><a href="">O Projeto</a></li>
+                <li><a href="">O Problema</a></li>
+                <li><a href="">Sua Jornada</a></li>
+                <li><a href="">Objetivos</a></li>
+            </ol>
+        </nav>
+        <a href="">Processo Seletivo</a>
+    </header>
+
+    <main>
+        <section id="formSection">
+
+            <form action="">
+                <div id="formHeader">
+                    <h1>Formulário de Cadastro</h1>
+                    <p>Preencha seus dados</p>
+                </div>
+                <div class="inputContainer">
+                    <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
+                    <input type="text" placeholder="Nome completo*"></input>
+                </div>
+                <div class="inputContainer">
+                    <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
+                    <input type="email" placeholder="E-mail*"></input>
+                </div>
+                <div class="inputContainer">
+                    <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
+                    <select>
+                        <option value="" disabled selected>Estado*</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div id="checkboxContainer">
+                    <p>Conhecimento de Programação*</p>
+                    <div id="checkboxList">
+                        <label for="HTML"><input type="checkbox" name="" id="HTML"> HTML</label>
+                        <label for="CSS"><input type="checkbox" name="" id="CSS"> CSS</label>
+                        <label for="JavaScript"><input type="checkbox" name="" id="JavaScript"> JavaScript</label>
+                        <label for="PHP"><input type="checkbox" name="" id="PHP"> PHP</label>
+                        <label for=".NET"><input type="checkbox" name="" id=".NET"> .NET</label>
+                        <label for="Vue.JS"><input type="checkbox" name="" id="Vue.JS"> Vue.JS</label>
+                        <label for="ReactJs"><input type="checkbox" name="" id="ReactJs"> ReactJs</label>
+                        <label for="React Native"><input type="checkbox" name="" id="React Native"> React
+                            Native</label>
+                        <label for="Node"><input type="checkbox" name="" id="Node"> Node</label>
+                        <label for="Python"><input type="checkbox" name="" id="Python"> Python</label>
+                        <label for="Flutter"><input type="checkbox" name="" id="Flutter"> Flutter</label>
+                        <label for="Outras"><input type="checkbox" name="" id="Outras"> Outras</label>
+                    </div>
+                </div>
+                <div id="question">
+                    <p>Já Trabalhou com desenvolvimento?</p>
+                    <label for="Não"><input type="checkbox"> Não</label>
+                    <label for="Sim"><input type="checkbox"> Sim</label>
+
+                </div>
+                <span id="requireFieldsSpan">(*) Campos obrigatórios</span>
+                <button type="submit">Enviar</button>
+                <p id="advice">Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em
+                    <span>política de privacidade</span>.
+                </p>
+            </form>
+        </section>
+        <section id="theProject" class="divParent">
+            <div class="divLeft">
+                <img src="Assets_Netuno/dev.png" alt="" width="450px">
+            </div>
+            <div class="divRight">
+                <div class="rightText" id="rightText1">
+                    <h1>O Projeto</h1>
+                    <p>Com o "novo normal" causado pela pandemia dos últimos anos, mais empresas no mundo todo têm
+                        aberto
+                        oportunidades no modelo Home office. <br>
+                        Alinhado à depreciação da moeda local, temos um alto índice de profissionais migrando para
+                        trabalhos
+                        em outros países.</p>
+                    <p>O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados por um
+                        recrutamento e turn over na área da tecnologiam bem como gerar oportunidades de carreira para
+                        novos
+                        profissionais.</p>
+                </div>
+            </div>
+        </section>
+        <section id="theProblem" class="divParent" id="container2">
+            <div class="divLeft">
+                <img src="Assets_Netuno/Container2.png" alt="" width="450px">
+            </div>
+            <div class="divRight" >
+                <div class="rightText" id="rightText2">
+                    <h1>O Problema</h1>
+                    <h2>Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</h2>
+                    <p>Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na casa dos R$167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI.</p>
+                    <p><strong>Um dos principais fatores dessa falta de profissionais é o êxodo de profissionais para o exterior.</strong></p>
+                </div>
+                <div id="cardsContainer">
+                    <div id="card1" class="square"><h1>Oportunidade</h1></div>
+                    <div id="card2" class="square"><h1>Comunidade</h1></div>
+                    <div id="card3" class="square"><h1>Experiencia</h1></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
