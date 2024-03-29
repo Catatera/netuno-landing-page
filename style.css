@@ -17,11 +17,6 @@ html {
   font-size: 14px;
 }
 
-body {
-  background-image: url("./Assets_Netuno/bannertopo.png");
-  background-repeat: no-repeat;
-}
-
 a {
   text-decoration: none;
   color: var(--white);
@@ -32,16 +27,40 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: var(--blue);
 }
-header>img{
+header > img {
   width: 15vw;
 }
-
 nav > a {
   background-color: var(--black);
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 4px;
+}
+nav > a,
+li > a {
+  font-size: clamp(0.1rem, 0.46em + 1vw, 1rem);
+}
+@media screen and (max-width: 730px) {
+  header {
+    flex-direction: column;
+  }
+  header > img {
+    width: 30%;
+  }
+  nav {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 613px) {
+  nav > a {
+    margin-top: 24px;
+  }
 }
 
 ol {
@@ -53,8 +72,13 @@ li {
   margin: 0px 16px;
 }
 
-main {
-  margin-top: 15vh;
+section:first-of-type{
+  background-image: url(Assets_Netuno/bannertopo.png);
+    background-size: 87%;
+    background-position: -130% 30%;
+    background-repeat: no-repeat;
+    background-color: var(--blue);
+    padding-top: 15vh;
 }
 
 form {
@@ -68,6 +92,11 @@ form {
 }
 
 @media screen and (max-width: 936px) {
+  section:first-of-type{
+  background-image: url(Assets_Netuno/bannertopo.png);
+  background-size: 115%;
+  background-position: center;
+}
   form {
     margin: 0px auto;
   }
@@ -77,8 +106,14 @@ form {
   padding: 24px 24px 0px 24px;
   margin: 8px;
 }
-
+#formHeader > h1 {
+  font-size: 1.2rem;
+  color: #cecece;
+}
 #formHeader > p {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 0.9rem;
   margin: 8px 0px;
 }
 
@@ -132,11 +167,39 @@ select:focus {
   justify-content: space-evenly;
   align-items: center;
 }
-
+label {
+  cursor: pointer;
+}
 #checkboxList > label {
   margin: 0 4px;
   width: 30%;
   text-align: left;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  background-color: none;
+  outline: 1.5px solid #fff;
+  border: 1.5px solid var(--blue);
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[type="checkbox"]:hover {
+  background-color: #ffffff38;
+}
+input[type="checkbox"]:checked {
+  background-color: #fff;
+}
+
+#sim,#nao {
+  border: 1.5px solid #fff;
+  outline: 1.5px solid var(--blue);
+}
+#sim:checked,#nao:checked  {
+  background-color: var(--blue);
 }
 
 #question {
@@ -163,6 +226,7 @@ select:focus {
 }
 
 button[type="submit"] {
+  cursor: pointer;
   background-color: var(--blue);
   color: #fff;
   margin: 8px auto;
@@ -171,6 +235,12 @@ button[type="submit"] {
   font-size: 1.3rem;
   padding: 8px 0px;
   border-radius: 4px;
+}
+button[type="submit"]:hover {
+  background-color: #3296d3;
+}
+button[type="submit"]:focus {
+  background-color: #186da1;
 }
 
 #advice,
@@ -186,8 +256,8 @@ button[type="submit"] {
 }
 
 #theProject {
-  margin-top: 25%;
   background-color: var(--blue);
+  padding-bottom: 64px;
 }
 
 .divParent {
@@ -326,12 +396,16 @@ strong {
 }
 
 @media screen and (max-width: 936px) {
+
   .square {
     display: block;
     width: 60%;
     height: 100%;
     margin: 32px auto;
     padding-bottom: 8px;
+  }
+  .square:first-of-type {
+    margin-top: 80px;
   }
 }
 
@@ -398,7 +472,7 @@ strong {
     flex-direction: column;
     text-align: center;
     width: 40%;
-    height: 26%;
+    height: 25vh;
     margin: 16px 8px;
     padding-bottom: 8px;
   }

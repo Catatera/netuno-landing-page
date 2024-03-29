@@ -11,95 +11,96 @@
 <body>
     <header>
         <img src="./Assets_Netuno/assets/logo.png" alt="" />
-            <nav>
-                <ol>
-                    <li><a href="#theProject">O Projeto</a></li>
-                    <li><a href="#theProblem">O Problema</a></li>
-                    <li><a href="#yourJourney">Sua Jornada</a></li>
-                    <li><a href="#goals">Objetivos</a></li>
-                </ol>
-                <a href="">Processo Seletivo</a>
-            </nav>
+        <nav>
+            <ol>
+                <li><a href="#theProject">O Projeto</a></li>
+                <li><a href="#theProblem">O Problema</a></li>
+                <li><a href="#yourJourney">Sua Jornada</a></li>
+                <li><a href="#goals">Objetivos</a></li>
+            </ol>
+            <a href="">Processo Seletivo</a>
+        </nav>
     </header>
 
     <main>
-        <section id="formSection">
-            <form action="">
-                <div id="formHeader">
-                    <h1>Formulário de Cadastro</h1>
-                    <p>Preencha seus dados</p>
-                </div>
-                <div class="inputContainer">
-                    <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
-                    <input type="text" placeholder="Nome completo*"></input>
-                </div>
-                <div class="inputContainer">
-                    <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
-                    <input type="email" placeholder="E-mail*"></input>
-                </div>
-                <div class="inputContainer">
-                    <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
-                    <select>
-                        <option value="" disabled selected>Estado*</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
-                <div id="checkboxContainer">
-                    <p>Conhecimento de Programação*</p>
-                    <div id="checkboxList">
-                        <label for="HTML"><input type="checkbox" name="" id="HTML"> HTML</label>
-                        <label for="CSS"><input type="checkbox" name="" id="CSS"> CSS</label>
-                        <label for="JavaScript"><input type="checkbox" name="" id="JavaScript"> JavaScript</label>
-                        <label for="PHP"><input type="checkbox" name="" id="PHP"> PHP</label>
-                        <label for=".NET"><input type="checkbox" name="" id=".NET"> .NET</label>
-                        <label for="Vue.JS"><input type="checkbox" name="" id="Vue.JS"> Vue.JS</label>
-                        <label for="ReactJs"><input type="checkbox" name="" id="ReactJs"> ReactJs</label>
-                        <label for="React Native"><input type="checkbox" name="" id="React Native"> React
-                            Native</label>
-                        <label for="Node"><input type="checkbox" name="" id="Node"> Node</label>
-                        <label for="Python"><input type="checkbox" name="" id="Python"> Python</label>
-                        <label for="Flutter"><input type="checkbox" name="" id="Flutter"> Flutter</label>
-                        <label for="Outras"><input type="checkbox" name="" id="Outras"> Outras</label>
+        <section>
+            <div id="formDiv">
+                <form action="">
+                    <div id="formHeader">
+                        <h1>Formulário de Cadastro</h1>
+                        <p>Preencha seus dados</p>
                     </div>
-                </div>
-                <div id="question">
-                    <p>Já Trabalhou com desenvolvimento?</p>
-                    <label for="Não"><input type="checkbox"> Não</label>
-                    <label for="Sim"><input type="checkbox"> Sim</label>
-
-                </div>
-                <span id="requireFieldsSpan">(*) Campos obrigatórios</span>
-                <button type="submit">Enviar</button>
-                <p id="advice">Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em
-                    <span>política de privacidade</span>.
-                </p>
-            </form>
+                    <div class="inputContainer">
+                        <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
+                        <input type="text" placeholder="Nome completo*"></input>
+                    </div>
+                    <div class="inputContainer">
+                        <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
+                        <input type="email" placeholder="E-mail*"></input>
+                    </div>
+                    <div class="inputContainer">
+                        <img src="Assets_Netuno/icones/user.png" alt="" class="icon">
+                        <select>
+                            <option value="" disabled selected>Estado*</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div id="checkboxContainer">
+                        <p>Conhecimento de Programação*</p>
+                        <div id="checkboxList">
+                            <label for="HTML"><input type="checkbox" name="" id="HTML"> HTML</label>
+                            <label for="CSS"><input type="checkbox" name="" id="CSS"> CSS</label>
+                            <label for="JavaScript"><input type="checkbox" name="" id="JavaScript"> JavaScript</label>
+                            <label for="PHP"><input type="checkbox" name="" id="PHP"> PHP</label>
+                            <label for=".NET"><input type="checkbox" name="" id=".NET"> .NET</label>
+                            <label for="Vue.JS"><input type="checkbox" name="" id="Vue.JS"> Vue.JS</label>
+                            <label for="ReactJs"><input type="checkbox" name="" id="ReactJs"> ReactJs</label>
+                            <label for="React Native"><input type="checkbox" name="" id="React Native"> React
+                                Native</label>
+                            <label for="Node"><input type="checkbox" name="" id="Node"> Node</label>
+                            <label for="Python"><input type="checkbox" name="" id="Python"> Python</label>
+                            <label for="Flutter"><input type="checkbox" name="" id="Flutter"> Flutter</label>
+                            <label for="Outras"><input type="checkbox" name="" id="Outras"> Outras</label>
+                        </div>
+                    </div>
+                    <div id="question">
+                        <p>Já Trabalhou com desenvolvimento?</p>
+                        <label for="nao"><input type="checkbox" id="nao"> Não</label>
+                        <label for="sim"><input type="checkbox" id="sim"> Sim</label>
+                    </div>
+                    <span id="requireFieldsSpan">(*) Campos obrigatórios</span>
+                    <a href="/"></a><button type="submit">Enviar</button></a>
+                    <p id="advice">Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em
+                        <span>política de privacidade</span>.
+                    </p>
+                </form>
+            </div>
         </section>
         <section id="theProject" class="divParent">
             <div class="divLeft">
