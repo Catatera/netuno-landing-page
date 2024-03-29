@@ -36,7 +36,8 @@ header {
 header>img{
   width: 15vw;
 }
-header > a {
+
+nav > a {
   background-color: var(--black);
   font-weight: 500;
   padding: 8px 16px;
