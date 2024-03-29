@@ -30,7 +30,7 @@ header {
   justify-content: space-evenly;
 }
 
-header>a {
+header > a {
   background-color: var(--black);
   font-weight: 500;
   padding: 8px 16px;
@@ -71,7 +71,7 @@ form {
   margin: 8px;
 }
 
-#formHeader>p {
+#formHeader > p {
   margin: 8px 0px;
 }
 
@@ -83,7 +83,7 @@ form {
   margin: 8px auto 0px auto;
 }
 
-.inputContainer>input,
+.inputContainer > input,
 select {
   border: 0px;
   width: 90%;
@@ -103,7 +103,7 @@ select:focus {
   width: 16px;
 }
 
-#formMain>select {
+#formMain > select {
   width: 97%;
 }
 
@@ -114,7 +114,7 @@ select:focus {
   margin: 32px auto 0px auto;
 }
 
-#checkboxContainer>p,
+#checkboxContainer > p,
 #checkboxList {
   margin: 0px 0px 8px 16px;
 }
@@ -126,7 +126,7 @@ select:focus {
   align-items: center;
 }
 
-#checkboxList>label {
+#checkboxList > label {
   margin: 0 4px;
   width: 30%;
   text-align: left;
@@ -139,11 +139,11 @@ select:focus {
   border-bottom: 1px solid rgba(215, 215, 215, 0.826);
 }
 
-#question>p {
+#question > p {
   margin: 0px 0px 8px 16px;
 }
 
-#question>label>input {
+#question > label > input {
   margin-left: 16px;
 }
 
@@ -155,7 +155,7 @@ select:focus {
   text-align: center;
 }
 
-button[type=submit] {
+button[type="submit"] {
   background-color: var(--blue);
   color: #fff;
   margin: 8px auto;
@@ -167,14 +167,14 @@ button[type=submit] {
 }
 
 #advice,
-#advice>span {
+#advice > span {
   width: 60%;
   margin: 0 auto 32px auto;
   font-size: 0.6rem;
   text-align: center;
 }
 
-#advice>span {
+#advice > span {
   color: var(--blue);
 }
 
@@ -190,16 +190,19 @@ button[type=submit] {
 
 @media screen and (max-width: 800px) {
   .divLeft,
-.divRight {
- width: 100%;
-}
-.divLeft>img{ 
-  width: 60%;
-  margin-right: 20vw;
-}
-#rightText1,#rightText2{
-  margin-left:27%;
-}
+  .divRight {
+    width: 100%;
+  }
+
+  .divLeft > img {
+    width: 60%;
+    margin-right: 20vw;
+  }
+
+  #rightText1,
+  #rightText2 {
+    margin-left: 27%;
+  }
 }
 
 .divLeft {
@@ -211,40 +214,44 @@ button[type=submit] {
   margin: 64px;
 }
 
-.rightText>h1 {
+.rightText > h1 {
   font-size: 2.3rem;
   color: #a4dcff;
 }
 
-.rightText>p {
+.rightText > p {
   color: #fff;
   width: 70%;
   margin: 16px 0px 0px 4px;
   font-weight: 300;
 }
 
-.rightText>p:last-child {
+.rightText > p:last-child {
   font-weight: 500;
 }
 
 /* Segundo container */
-#rightText2>h1 {
-  background-image: linear-gradient(to right, var(--blue) 0%, var(--lightBlue) 45%);
+#rightText2 > h1 {
+  background-image: linear-gradient(
+    to right,
+    var(--blue) 0%,
+    var(--lightBlue) 45%
+  );
   background-clip: text;
   color: transparent;
 }
 
-#rightText2>p,
-strong{
+#rightText2 > p,
+strong {
   color: #000;
   margin: 24px 0px 16px 0px;
 }
 
-#rightText2>p {
+#rightText2 > p {
   font-weight: 400;
 }
 
-#rightText2>h2 {
+#rightText2 > h2 {
   font-size: 1.15rem;
   width: 70%;
   border-bottom: 1.4px solid rgba(215, 215, 215, 0.826);
@@ -252,15 +259,208 @@ strong{
   padding-bottom: 16px;
 }
 
-#rightText2>p>strong {
+#rightText2 > p > strong {
   font-size: 0.9rem;
   font-weight: 700;
   width: 10%;
 }
 
-#cardsContainer{
+.cardsContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 22%;
+  height: 192px;
+  margin: 0px 2px;
+  justify-content: center;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 8px;
+  box-shadow: 0px 16px 15px 0px #0000003b;
+}
+
+.square1:nth-child(1) {
+  background-image: url(Assets_Netuno/icones/um.png);
+  background-size: 15%;
+  background-position: center;
+  background-position-y: 18%;
+  background-repeat: no-repeat;
+}
+
+.square1:nth-child(2) {
+  background-image: url(Assets_Netuno/icones/dois.png);
+  background-size: 15%;
+  background-position: center;
+  background-position-y: 18%;
+  background-repeat: no-repeat;
+}
+
+.square1:nth-child(3) {
+  background-image: url(Assets_Netuno/icones/tres.png);
+  background-size: 15%;
+  background-position: center;
+  background-position-y: 18%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 936px) {
+  .square {
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin: 32px auto;
+    padding-bottom: 8px;
+  }
+}
+
+.square > h1 {
+  font-size: 1.5rem;
+  margin-top: 32px;
+  font-weight: 800;
+}
+
+.square > p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0px 11% 8px 11%;
+}
+
+#yourJourney {
+  width: 100%;
+  text-align: center;
+  margin: 128px 0px 64px 0px;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to right,
+    var(--blue) 45%,
+    var(--lightBlue) 60%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+#rectangleContainer {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.rectangle {
+  width: 27%;
+  height: 68px;
+  margin: 8px;
+  background-color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0px 8px 12px 0px #0000005c;
+}
+
+.rectangle > img {
+  width: 10%;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.rectangle > p {
+  font-size: 0.9rem;
+  padding: 0px 8px;
+}
+
+@media screen and (max-width: 770px) {
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    height: 26%;
+    margin: 16px 8px;
+    padding-bottom: 8px;
+  }
+
+  .rectangle > img {
+    width: 30%;
+  }
+}
+
+#registrationContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#btnDiv {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btnDiv > a {
+  background-color: #000;
+  width: 384px;
+  margin-bottom: 16px;
+  padding: 16px 0px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  box-shadow: 0px 8px 20px #00000038;
+}
+#btnDiv > a > span {
+  color: var(--blue);
+}
+#btnDiv > a > img {
+  margin-left: 16px;
+  width: 5%;
+}
+
+#goals {
+  background-image: linear-gradient(
+    to right,
+    var(--blue),
+    #4bb4f4,
+    var(--blue)
+  );
+  padding-bottom: 72px;
+}
+#goals > h1 {
+  margin-top: 64px;
+  padding: 48px 0px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+#goalsCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.square2 {
+  background-color: #fff;
+  box-shadow:0px 20px 20px 0px #00000033;
+}
+.square2 > h2 {
+  text-align: center;
+  margin: 32px auto 8px auto;
+  font-size: 1.7rem;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
   display: flex;
 }
-.card{
-  width: 20%;
-}
+
