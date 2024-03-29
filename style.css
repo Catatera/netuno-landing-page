@@ -7,6 +7,10 @@
   --white: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   font-family: "Noto Sans", sans-serif;
@@ -29,7 +33,9 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
-
+header>img{
+  width: 15vw;
+}
 header > a {
   background-color: var(--black);
   font-weight: 500;
@@ -178,6 +184,11 @@ button[type="submit"] {
   color: var(--blue);
 }
 
+#theProject {
+  margin-top: 25%;
+  background-color: var(--blue);
+}
+
 .divParent {
   display: flex;
   flex-wrap: wrap;
@@ -189,19 +200,21 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 800px) {
-  .divLeft,
-  .divRight {
+  .divLeft {
     width: 100%;
   }
-
+  .divRight {
+    width: 100%;
+    margin: 0px auto;
+  }
   .divLeft > img {
     width: 60%;
     margin-right: 20vw;
   }
-
-  #rightText1,
-  #rightText2 {
-    margin-left: 27%;
+  .rightText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -231,6 +244,7 @@ button[type="submit"] {
 }
 
 /* Segundo container */
+
 #rightText2 > h1 {
   background-image: linear-gradient(
     to right,
@@ -270,6 +284,7 @@ strong {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: -136px;
 }
 
 .square {
@@ -279,6 +294,7 @@ strong {
   height: 192px;
   margin: 0px 2px;
   justify-content: center;
+  background-color: #fff;
   border: 1px solid rgb(215, 215, 215);
   border-radius: 8px;
   box-shadow: 0px 16px 15px 0px #0000003b;
@@ -400,7 +416,7 @@ strong {
 }
 
 #btnDiv {
-  margin-top: 72px;
+  margin: 72px 0px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -450,7 +466,7 @@ strong {
 }
 .square2 {
   background-color: #fff;
-  box-shadow:0px 20px 20px 0px #00000033;
+  box-shadow: 0px 20px 20px 0px #00000033;
 }
 .square2 > h2 {
   text-align: center;
@@ -458,9 +474,88 @@ strong {
   font-size: 1.7rem;
 }
 
-footer{
+footer {
   background-color: #000;
   color: #fff;
-  display: flex;
+  padding-top: 32px;
 }
 
+#footerContainer {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  #footerContainer {
+    width: 90%;
+  }
+}
+
+#footerContainer > div {
+  width: 30%;
+}
+
+#social * {
+  margin: 4px 0px;
+}
+#social > div > a > img {
+  width: 16px;
+  margin-right: 8px;
+}
+#social > p {
+  font-size: 0.7rem;
+  color: #ffffff9d;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#links > div {
+  height: 100%;
+  margin-top: 8px;
+}
+#links > div > a {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 4px;
+}
+#links > span {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(148, 148, 148, 0.308);
+  padding-right: 8px;
+}
+#links > span > a {
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+#contacts > h2,
+address {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 715px) {
+  #footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #footerContainer > div {
+    margin: 16px auto;
+    width: 60%;
+    text-align: center;
+  }
+  #links > div {
+    margin-bottom: 16px;
+  }
+  #links > span {
+    border-right: 0px;
+  }
+}
